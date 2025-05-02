@@ -1,5 +1,5 @@
 import React from "react";
-
+import PostList from "./components/PostList";
 import "./App.css";
 
 const App = () => {
@@ -56,6 +56,7 @@ const App = () => {
       <h1>My Feed</h1>
       {/* Include PostList as a child component */}
       {/* Pass the posts as prop to PostList */}
+      <PostList posts={posts} />
     </div>
   );
 };
